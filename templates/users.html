@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ user[0] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Інформація користувача</h1>
+    <table>
+        <tr>
+            <th>Ім'я:</th>
+            <td>{{ user[1] }}</td>
+        </tr>
+        <tr>
+            <th>Прізвище:</th>
+            <td>{{ user[2] }}</td>
+        </tr>
+        <tr>
+            <th>Номер телефону:</th>
+            <td>{{ user[3] }}</td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td>{{ user[4] }}</td>
+        </tr>
+    </table>
+    <br> <a href="/logout">Вихід</a>
+</body>
+</html>
